@@ -79,7 +79,7 @@ export class SystemlogApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public systemlogGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse200>> {
+    public systemlogGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20035>> {
         return this.systemlogGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class SystemlogApi {
      * 
      * @param id Identifier for item.
      */
-    public systemlogIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse200> {
+    public systemlogIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20035> {
         return this.systemlogIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class SystemlogApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public systemlogIdPatch(id: string, item: models.Item110, extraHttpRequestParams?: any): Observable<number> {
+    public systemlogIdPatch(id: string, item: models.Item107, extraHttpRequestParams?: any): Observable<number> {
         return this.systemlogIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class SystemlogApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public systemlogIdPut(id: string, item: models.Item109, extraHttpRequestParams?: any): Observable<number> {
+    public systemlogIdPut(id: string, item: models.Item106, extraHttpRequestParams?: any): Observable<number> {
         return this.systemlogIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class SystemlogApi {
      * 
      * @param item Item to create.
      */
-    public systemlogPost(item: models.Item108, extraHttpRequestParams?: any): Observable<number> {
+    public systemlogPost(item: models.Item105, extraHttpRequestParams?: any): Observable<number> {
         return this.systemlogPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class SystemlogApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public systemlogIdPatchWithHttpInfo(id: string, item: models.Item110, extraHttpRequestParams?: any): Observable<Response> {
+    public systemlogIdPatchWithHttpInfo(id: string, item: models.Item107, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/systemlog/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class SystemlogApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public systemlogIdPutWithHttpInfo(id: string, item: models.Item109, extraHttpRequestParams?: any): Observable<Response> {
+    public systemlogIdPutWithHttpInfo(id: string, item: models.Item106, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/systemlog/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class SystemlogApi {
      * 
      * @param item Item to create.
      */
-    public systemlogPostWithHttpInfo(item: models.Item108, extraHttpRequestParams?: any): Observable<Response> {
+    public systemlogPostWithHttpInfo(item: models.Item105, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/systemlog`;
 
         let queryParameters = new URLSearchParams();

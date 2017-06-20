@@ -29,10 +29,6 @@ export interface InlineResponse2006 {
 
     name?: string;
 
-    categoryId?: number;
-
-    description?: string;
-
-    active?: number;
+    parentId?: number;
 
 }

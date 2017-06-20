@@ -79,7 +79,7 @@ export class System_variableApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public systemVariableGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20035>> {
+    public systemVariableGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20034>> {
         return this.systemVariableGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class System_variableApi {
      * 
      * @param id Identifier for item.
      */
-    public systemVariableIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20035> {
+    public systemVariableIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20034> {
         return this.systemVariableIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class System_variableApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public systemVariableIdPatch(id: string, item: models.Item107, extraHttpRequestParams?: any): Observable<number> {
+    public systemVariableIdPatch(id: string, item: models.Item104, extraHttpRequestParams?: any): Observable<number> {
         return this.systemVariableIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class System_variableApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public systemVariableIdPut(id: string, item: models.Item106, extraHttpRequestParams?: any): Observable<number> {
+    public systemVariableIdPut(id: string, item: models.Item103, extraHttpRequestParams?: any): Observable<number> {
         return this.systemVariableIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class System_variableApi {
      * 
      * @param item Item to create.
      */
-    public systemVariablePost(item: models.Item105, extraHttpRequestParams?: any): Observable<number> {
+    public systemVariablePost(item: models.Item102, extraHttpRequestParams?: any): Observable<number> {
         return this.systemVariablePostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class System_variableApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public systemVariableIdPatchWithHttpInfo(id: string, item: models.Item107, extraHttpRequestParams?: any): Observable<Response> {
+    public systemVariableIdPatchWithHttpInfo(id: string, item: models.Item104, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/system_variable/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class System_variableApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public systemVariableIdPutWithHttpInfo(id: string, item: models.Item106, extraHttpRequestParams?: any): Observable<Response> {
+    public systemVariableIdPutWithHttpInfo(id: string, item: models.Item103, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/system_variable/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class System_variableApi {
      * 
      * @param item Item to create.
      */
-    public systemVariablePostWithHttpInfo(item: models.Item105, extraHttpRequestParams?: any): Observable<Response> {
+    public systemVariablePostWithHttpInfo(item: models.Item102, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/system_variable`;
 
         let queryParameters = new URLSearchParams();

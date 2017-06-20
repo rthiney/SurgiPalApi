@@ -29,4 +29,8 @@ export interface InlineResponse20034 {
 
     name?: string;
 
+    slug?: string;
+
+    value?: string;
+
 }

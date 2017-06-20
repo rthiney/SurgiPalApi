@@ -27,6 +27,6 @@ import * as models from './models';
 export interface Item89 {
     id: number;
 
-    name?: string;
+    name: string;
 
 }

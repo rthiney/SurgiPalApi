@@ -27,28 +27,10 @@ import * as models from './models';
 export interface Item9 {
     id: number;
 
-    cardId?: number;
+    title: string;
 
-    doctorId?: number;
+    slug: string;
 
-    respondentId?: number;
-
-    name?: string;
-
-    createdAt: string;
-
-    hospitalId?: number;
-
-    parentSnapshotId?: number;
-
-    surgerySnapshot?: number;
-
-    cpt?: string;
-
-    diagnosisCode?: string;
-
-    surgeryTime?: string;
-
-    admissionStatus?: string;
+    content: string;
 
 }

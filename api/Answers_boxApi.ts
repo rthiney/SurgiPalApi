@@ -79,7 +79,7 @@ export class Answers_boxApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public answersBoxGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2003>> {
+    public answersBoxGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2002>> {
         return this.answersBoxGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class Answers_boxApi {
      * 
      * @param id Identifier for item.
      */
-    public answersBoxIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2003> {
+    public answersBoxIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2002> {
         return this.answersBoxIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class Answers_boxApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answersBoxIdPatch(id: string, item: models.Item11, extraHttpRequestParams?: any): Observable<number> {
+    public answersBoxIdPatch(id: string, item: models.Item8, extraHttpRequestParams?: any): Observable<number> {
         return this.answersBoxIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class Answers_boxApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answersBoxIdPut(id: string, item: models.Item10, extraHttpRequestParams?: any): Observable<number> {
+    public answersBoxIdPut(id: string, item: models.Item7, extraHttpRequestParams?: any): Observable<number> {
         return this.answersBoxIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class Answers_boxApi {
      * 
      * @param item Item to create.
      */
-    public answersBoxPost(item: models.Item9, extraHttpRequestParams?: any): Observable<number> {
+    public answersBoxPost(item: models.Item6, extraHttpRequestParams?: any): Observable<number> {
         return this.answersBoxPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class Answers_boxApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answersBoxIdPatchWithHttpInfo(id: string, item: models.Item11, extraHttpRequestParams?: any): Observable<Response> {
+    public answersBoxIdPatchWithHttpInfo(id: string, item: models.Item8, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/answers_box/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class Answers_boxApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answersBoxIdPutWithHttpInfo(id: string, item: models.Item10, extraHttpRequestParams?: any): Observable<Response> {
+    public answersBoxIdPutWithHttpInfo(id: string, item: models.Item7, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/answers_box/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class Answers_boxApi {
      * 
      * @param item Item to create.
      */
-    public answersBoxPostWithHttpInfo(item: models.Item9, extraHttpRequestParams?: any): Observable<Response> {
+    public answersBoxPostWithHttpInfo(item: models.Item6, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/answers_box`;
 
         let queryParameters = new URLSearchParams();

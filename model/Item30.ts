@@ -29,10 +29,4 @@ export interface Item30 {
 
     name: string;
 
-    email: string;
-
-    message: string;
-
-    createdAt: string;
-
 }

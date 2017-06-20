@@ -79,7 +79,7 @@ export class SpecialtyApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public specialtyGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20030>> {
+    public specialtyGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20029>> {
         return this.specialtyGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class SpecialtyApi {
      * 
      * @param id Identifier for item.
      */
-    public specialtyIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20030> {
+    public specialtyIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20029> {
         return this.specialtyIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class SpecialtyApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public specialtyIdPatch(id: string, item: models.Item92, extraHttpRequestParams?: any): Observable<number> {
+    public specialtyIdPatch(id: string, item: models.Item89, extraHttpRequestParams?: any): Observable<number> {
         return this.specialtyIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class SpecialtyApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public specialtyIdPut(id: string, item: models.Item91, extraHttpRequestParams?: any): Observable<number> {
+    public specialtyIdPut(id: string, item: models.Item88, extraHttpRequestParams?: any): Observable<number> {
         return this.specialtyIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class SpecialtyApi {
      * 
      * @param item Item to create.
      */
-    public specialtyPost(item: models.Item90, extraHttpRequestParams?: any): Observable<number> {
+    public specialtyPost(item: models.Item87, extraHttpRequestParams?: any): Observable<number> {
         return this.specialtyPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class SpecialtyApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public specialtyIdPatchWithHttpInfo(id: string, item: models.Item92, extraHttpRequestParams?: any): Observable<Response> {
+    public specialtyIdPatchWithHttpInfo(id: string, item: models.Item89, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/specialty/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class SpecialtyApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public specialtyIdPutWithHttpInfo(id: string, item: models.Item91, extraHttpRequestParams?: any): Observable<Response> {
+    public specialtyIdPutWithHttpInfo(id: string, item: models.Item88, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/specialty/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class SpecialtyApi {
      * 
      * @param item Item to create.
      */
-    public specialtyPostWithHttpInfo(item: models.Item90, extraHttpRequestParams?: any): Observable<Response> {
+    public specialtyPostWithHttpInfo(item: models.Item87, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/specialty`;
 
         let queryParameters = new URLSearchParams();

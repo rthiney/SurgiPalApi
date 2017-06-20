@@ -27,10 +27,16 @@ import * as models from './models';
 export interface InlineResponse200 {
     id?: number;
 
-    type?: string;
+    fosUserId?: number;
 
-    description?: string;
+    questionId?: number;
+
+    answersBoxId?: number;
+
+    reply?: string;
 
     createdAt?: string;
+
+    updatedAt?: string;
 
 }

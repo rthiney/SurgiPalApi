@@ -29,8 +29,4 @@ export interface InlineResponse20028 {
 
     name?: string;
 
-    position?: number;
-
-    slug?: string;
-
 }

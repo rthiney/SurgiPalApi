@@ -25,8 +25,24 @@
 import * as models from './models';
 
 export interface Item79 {
-    practiceId: number;
+    id: number;
 
-    hospitalId: number;
+    text?: string;
+
+    placeholder?: string;
+
+    clusterId?: number;
+
+    questionTypeId?: number;
+
+    active: number;
+
+    required: number;
+
+    position?: number;
+
+    options?: string;
+
+    indent?: number;
 
 }

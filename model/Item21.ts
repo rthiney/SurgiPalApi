@@ -29,6 +29,4 @@ export interface Item21 {
 
     name: string;
 
-    parentId?: number;
-
 }

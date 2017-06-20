@@ -25,8 +25,8 @@
 import * as models from './models';
 
 export interface InlineResponse2008 {
-    id?: number;
+    clusterId?: number;
 
-    name?: string;
+    cardId?: number;
 
 }

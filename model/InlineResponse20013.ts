@@ -25,8 +25,18 @@
 import * as models from './models';
 
 export interface InlineResponse20013 {
-    hospitalId?: number;
+    id?: number;
 
-    doctorId?: number;
+    userId?: number;
+
+    subject?: string;
+
+    message?: string;
+
+    createdAt?: string;
+
+    viewed?: number;
+
+    senderId?: number;
 
 }

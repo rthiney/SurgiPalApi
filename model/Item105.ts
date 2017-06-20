@@ -27,10 +27,10 @@ import * as models from './models';
 export interface Item105 {
     id: number;
 
-    name?: string;
+    type?: string;
 
-    slug?: string;
+    description?: string;
 
-    value?: string;
+    createdAt: string;
 
 }

@@ -79,7 +79,7 @@ export class Gown_sizeApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public gownSizeGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20020>> {
+    public gownSizeGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20019>> {
         return this.gownSizeGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class Gown_sizeApi {
      * 
      * @param id Identifier for item.
      */
-    public gownSizeIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20020> {
+    public gownSizeIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20019> {
         return this.gownSizeIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class Gown_sizeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public gownSizeIdPatch(id: string, item: models.Item62, extraHttpRequestParams?: any): Observable<number> {
+    public gownSizeIdPatch(id: string, item: models.Item59, extraHttpRequestParams?: any): Observable<number> {
         return this.gownSizeIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class Gown_sizeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public gownSizeIdPut(id: string, item: models.Item61, extraHttpRequestParams?: any): Observable<number> {
+    public gownSizeIdPut(id: string, item: models.Item58, extraHttpRequestParams?: any): Observable<number> {
         return this.gownSizeIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class Gown_sizeApi {
      * 
      * @param item Item to create.
      */
-    public gownSizePost(item: models.Item60, extraHttpRequestParams?: any): Observable<number> {
+    public gownSizePost(item: models.Item57, extraHttpRequestParams?: any): Observable<number> {
         return this.gownSizePostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class Gown_sizeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public gownSizeIdPatchWithHttpInfo(id: string, item: models.Item62, extraHttpRequestParams?: any): Observable<Response> {
+    public gownSizeIdPatchWithHttpInfo(id: string, item: models.Item59, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/gown_size/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class Gown_sizeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public gownSizeIdPutWithHttpInfo(id: string, item: models.Item61, extraHttpRequestParams?: any): Observable<Response> {
+    public gownSizeIdPutWithHttpInfo(id: string, item: models.Item58, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/gown_size/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class Gown_sizeApi {
      * 
      * @param item Item to create.
      */
-    public gownSizePostWithHttpInfo(item: models.Item60, extraHttpRequestParams?: any): Observable<Response> {
+    public gownSizePostWithHttpInfo(item: models.Item57, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/gown_size`;
 
         let queryParameters = new URLSearchParams();

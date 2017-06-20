@@ -128,7 +128,7 @@ export class User_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public userUserIdPatch(id: string, item: models.Item113, extraHttpRequestParams?: any): Observable<number> {
+    public userUserIdPatch(id: string, item: models.Item110, extraHttpRequestParams?: any): Observable<number> {
         return this.userUserIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class User_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public userUserIdPut(id: string, item: models.Item112, extraHttpRequestParams?: any): Observable<number> {
+    public userUserIdPut(id: string, item: models.Item109, extraHttpRequestParams?: any): Observable<number> {
         return this.userUserIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class User_userApi {
      * 
      * @param item Item to create.
      */
-    public userUserPost(item: models.Item111, extraHttpRequestParams?: any): Observable<number> {
+    public userUserPost(item: models.Item108, extraHttpRequestParams?: any): Observable<number> {
         return this.userUserPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class User_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public userUserIdPatchWithHttpInfo(id: string, item: models.Item113, extraHttpRequestParams?: any): Observable<Response> {
+    public userUserIdPatchWithHttpInfo(id: string, item: models.Item110, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/user_user/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class User_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public userUserIdPutWithHttpInfo(id: string, item: models.Item112, extraHttpRequestParams?: any): Observable<Response> {
+    public userUserIdPutWithHttpInfo(id: string, item: models.Item109, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/user_user/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class User_userApi {
      * 
      * @param item Item to create.
      */
-    public userUserPostWithHttpInfo(item: models.Item111, extraHttpRequestParams?: any): Observable<Response> {
+    public userUserPostWithHttpInfo(item: models.Item108, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/user_user`;
 
         let queryParameters = new URLSearchParams();

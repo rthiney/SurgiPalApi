@@ -25,8 +25,8 @@
 import * as models from './models';
 
 export interface Item119 {
-    vendordataId: number;
+    id: number;
 
-    userId: number;
+    name: string;
 
 }

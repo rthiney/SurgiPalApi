@@ -79,7 +79,7 @@ export class Doctor_vendorApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public doctorVendorGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20015>> {
+    public doctorVendorGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20014>> {
         return this.doctorVendorGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class Doctor_vendorApi {
      * 
      * @param id Identifier for item.
      */
-    public doctorVendorIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20015> {
+    public doctorVendorIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20014> {
         return this.doctorVendorIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class Doctor_vendorApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public doctorVendorIdPatch(id: string, item: models.Item47, extraHttpRequestParams?: any): Observable<number> {
+    public doctorVendorIdPatch(id: string, item: models.Item44, extraHttpRequestParams?: any): Observable<number> {
         return this.doctorVendorIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class Doctor_vendorApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public doctorVendorIdPut(id: string, item: models.Item46, extraHttpRequestParams?: any): Observable<number> {
+    public doctorVendorIdPut(id: string, item: models.Item43, extraHttpRequestParams?: any): Observable<number> {
         return this.doctorVendorIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class Doctor_vendorApi {
      * 
      * @param item Item to create.
      */
-    public doctorVendorPost(item: models.Item45, extraHttpRequestParams?: any): Observable<number> {
+    public doctorVendorPost(item: models.Item42, extraHttpRequestParams?: any): Observable<number> {
         return this.doctorVendorPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class Doctor_vendorApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public doctorVendorIdPatchWithHttpInfo(id: string, item: models.Item47, extraHttpRequestParams?: any): Observable<Response> {
+    public doctorVendorIdPatchWithHttpInfo(id: string, item: models.Item44, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/doctor_vendor/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class Doctor_vendorApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public doctorVendorIdPutWithHttpInfo(id: string, item: models.Item46, extraHttpRequestParams?: any): Observable<Response> {
+    public doctorVendorIdPutWithHttpInfo(id: string, item: models.Item43, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/doctor_vendor/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class Doctor_vendorApi {
      * 
      * @param item Item to create.
      */
-    public doctorVendorPostWithHttpInfo(item: models.Item45, extraHttpRequestParams?: any): Observable<Response> {
+    public doctorVendorPostWithHttpInfo(item: models.Item42, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/doctor_vendor`;
 
         let queryParameters = new URLSearchParams();

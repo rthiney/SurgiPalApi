@@ -32,7 +32,6 @@ export * from './StateApi';
 export * from './SurgeriesviewApi';
 export * from './SurgeryApi';
 export * from './Surgery_statusApi';
-export * from './SystemLogApi';
 export * from './System_variableApi';
 export * from './SystemlogApi';
 export * from './User_userApi';

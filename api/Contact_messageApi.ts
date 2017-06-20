@@ -79,7 +79,7 @@ export class Contact_messageApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public contactMessageGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20010>> {
+    public contactMessageGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2009>> {
         return this.contactMessageGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class Contact_messageApi {
      * 
      * @param id Identifier for item.
      */
-    public contactMessageIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20010> {
+    public contactMessageIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2009> {
         return this.contactMessageIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class Contact_messageApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public contactMessageIdPatch(id: string, item: models.Item32, extraHttpRequestParams?: any): Observable<number> {
+    public contactMessageIdPatch(id: string, item: models.Item29, extraHttpRequestParams?: any): Observable<number> {
         return this.contactMessageIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class Contact_messageApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public contactMessageIdPut(id: string, item: models.Item31, extraHttpRequestParams?: any): Observable<number> {
+    public contactMessageIdPut(id: string, item: models.Item28, extraHttpRequestParams?: any): Observable<number> {
         return this.contactMessageIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class Contact_messageApi {
      * 
      * @param item Item to create.
      */
-    public contactMessagePost(item: models.Item30, extraHttpRequestParams?: any): Observable<number> {
+    public contactMessagePost(item: models.Item27, extraHttpRequestParams?: any): Observable<number> {
         return this.contactMessagePostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class Contact_messageApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public contactMessageIdPatchWithHttpInfo(id: string, item: models.Item32, extraHttpRequestParams?: any): Observable<Response> {
+    public contactMessageIdPatchWithHttpInfo(id: string, item: models.Item29, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/contact_message/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class Contact_messageApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public contactMessageIdPutWithHttpInfo(id: string, item: models.Item31, extraHttpRequestParams?: any): Observable<Response> {
+    public contactMessageIdPutWithHttpInfo(id: string, item: models.Item28, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/contact_message/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class Contact_messageApi {
      * 
      * @param item Item to create.
      */
-    public contactMessagePostWithHttpInfo(item: models.Item30, extraHttpRequestParams?: any): Observable<Response> {
+    public contactMessagePostWithHttpInfo(item: models.Item27, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/contact_message`;
 
         let queryParameters = new URLSearchParams();

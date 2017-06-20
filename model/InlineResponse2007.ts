@@ -29,6 +29,4 @@ export interface InlineResponse2007 {
 
     name?: string;
 
-    parentId?: number;
-
 }

@@ -25,8 +25,10 @@
 import * as models from './models';
 
 export interface Item47 {
-    doctorId: number;
+    id: number;
 
-    vendorId: number;
+    questionId?: number;
+
+    cardId?: number;
 
 }

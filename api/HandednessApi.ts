@@ -79,7 +79,7 @@ export class HandednessApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public handednessGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20022>> {
+    public handednessGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20021>> {
         return this.handednessGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class HandednessApi {
      * 
      * @param id Identifier for item.
      */
-    public handednessIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20022> {
+    public handednessIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20021> {
         return this.handednessIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class HandednessApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public handednessIdPatch(id: string, item: models.Item68, extraHttpRequestParams?: any): Observable<number> {
+    public handednessIdPatch(id: string, item: models.Item65, extraHttpRequestParams?: any): Observable<number> {
         return this.handednessIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class HandednessApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public handednessIdPut(id: string, item: models.Item67, extraHttpRequestParams?: any): Observable<number> {
+    public handednessIdPut(id: string, item: models.Item64, extraHttpRequestParams?: any): Observable<number> {
         return this.handednessIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class HandednessApi {
      * 
      * @param item Item to create.
      */
-    public handednessPost(item: models.Item66, extraHttpRequestParams?: any): Observable<number> {
+    public handednessPost(item: models.Item63, extraHttpRequestParams?: any): Observable<number> {
         return this.handednessPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class HandednessApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public handednessIdPatchWithHttpInfo(id: string, item: models.Item68, extraHttpRequestParams?: any): Observable<Response> {
+    public handednessIdPatchWithHttpInfo(id: string, item: models.Item65, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/handedness/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class HandednessApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public handednessIdPutWithHttpInfo(id: string, item: models.Item67, extraHttpRequestParams?: any): Observable<Response> {
+    public handednessIdPutWithHttpInfo(id: string, item: models.Item64, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/handedness/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class HandednessApi {
      * 
      * @param item Item to create.
      */
-    public handednessPostWithHttpInfo(item: models.Item66, extraHttpRequestParams?: any): Observable<Response> {
+    public handednessPostWithHttpInfo(item: models.Item63, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/handedness`;
 
         let queryParameters = new URLSearchParams();

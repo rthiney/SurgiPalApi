@@ -79,7 +79,7 @@ export class Fos_userApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public fosUserGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20017>> {
+    public fosUserGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20016>> {
         return this.fosUserGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class Fos_userApi {
      * 
      * @param id Identifier for item.
      */
-    public fosUserIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20017> {
+    public fosUserIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20016> {
         return this.fosUserIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class Fos_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public fosUserIdPatch(id: string, item: models.Item53, extraHttpRequestParams?: any): Observable<number> {
+    public fosUserIdPatch(id: string, item: models.Item50, extraHttpRequestParams?: any): Observable<number> {
         return this.fosUserIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class Fos_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public fosUserIdPut(id: string, item: models.Item52, extraHttpRequestParams?: any): Observable<number> {
+    public fosUserIdPut(id: string, item: models.Item49, extraHttpRequestParams?: any): Observable<number> {
         return this.fosUserIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class Fos_userApi {
      * 
      * @param item Item to create.
      */
-    public fosUserPost(item: models.Item51, extraHttpRequestParams?: any): Observable<number> {
+    public fosUserPost(item: models.Item48, extraHttpRequestParams?: any): Observable<number> {
         return this.fosUserPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class Fos_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public fosUserIdPatchWithHttpInfo(id: string, item: models.Item53, extraHttpRequestParams?: any): Observable<Response> {
+    public fosUserIdPatchWithHttpInfo(id: string, item: models.Item50, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/fos_user/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class Fos_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public fosUserIdPutWithHttpInfo(id: string, item: models.Item52, extraHttpRequestParams?: any): Observable<Response> {
+    public fosUserIdPutWithHttpInfo(id: string, item: models.Item49, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/fos_user/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class Fos_userApi {
      * 
      * @param item Item to create.
      */
-    public fosUserPostWithHttpInfo(item: models.Item51, extraHttpRequestParams?: any): Observable<Response> {
+    public fosUserPostWithHttpInfo(item: models.Item48, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/fos_user`;
 
         let queryParameters = new URLSearchParams();

@@ -79,7 +79,7 @@ export class Glove_typeApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public gloveTypeGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20019>> {
+    public gloveTypeGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20018>> {
         return this.gloveTypeGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class Glove_typeApi {
      * 
      * @param id Identifier for item.
      */
-    public gloveTypeIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20019> {
+    public gloveTypeIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20018> {
         return this.gloveTypeIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class Glove_typeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public gloveTypeIdPatch(id: string, item: models.Item59, extraHttpRequestParams?: any): Observable<number> {
+    public gloveTypeIdPatch(id: string, item: models.Item56, extraHttpRequestParams?: any): Observable<number> {
         return this.gloveTypeIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class Glove_typeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public gloveTypeIdPut(id: string, item: models.Item58, extraHttpRequestParams?: any): Observable<number> {
+    public gloveTypeIdPut(id: string, item: models.Item55, extraHttpRequestParams?: any): Observable<number> {
         return this.gloveTypeIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class Glove_typeApi {
      * 
      * @param item Item to create.
      */
-    public gloveTypePost(item: models.Item57, extraHttpRequestParams?: any): Observable<number> {
+    public gloveTypePost(item: models.Item54, extraHttpRequestParams?: any): Observable<number> {
         return this.gloveTypePostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class Glove_typeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public gloveTypeIdPatchWithHttpInfo(id: string, item: models.Item59, extraHttpRequestParams?: any): Observable<Response> {
+    public gloveTypeIdPatchWithHttpInfo(id: string, item: models.Item56, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/glove_type/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class Glove_typeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public gloveTypeIdPutWithHttpInfo(id: string, item: models.Item58, extraHttpRequestParams?: any): Observable<Response> {
+    public gloveTypeIdPutWithHttpInfo(id: string, item: models.Item55, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/glove_type/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class Glove_typeApi {
      * 
      * @param item Item to create.
      */
-    public gloveTypePostWithHttpInfo(item: models.Item57, extraHttpRequestParams?: any): Observable<Response> {
+    public gloveTypePostWithHttpInfo(item: models.Item54, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/glove_type`;
 
         let queryParameters = new URLSearchParams();

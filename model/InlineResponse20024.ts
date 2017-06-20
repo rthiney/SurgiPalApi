@@ -27,30 +27,22 @@ import * as models from './models';
 export interface InlineResponse20024 {
     id?: number;
 
-    userId?: number;
+    stateId?: number;
 
-    subject?: string;
+    countryId?: number;
 
-    message?: string;
-
-    createdAt?: string;
-
-    viewed?: number;
-
-    senderId?: number;
-
-    doctorDataId?: number;
-
-    hospitalDataId?: number;
+    name?: string;
 
     email?: string;
 
-    doctorName?: string;
+    address?: string;
 
-    doctorImage?: string;
+    suite?: string;
 
-    hospitalName?: string;
+    city?: string;
 
-    hospitalEmail?: string;
+    stateTyped?: string;
+
+    postalCode?: string;
 
 }

@@ -79,7 +79,7 @@ export class Answer_suggestedApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public answerSuggestedGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2002>> {
+    public answerSuggestedGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2001>> {
         return this.answerSuggestedGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class Answer_suggestedApi {
      * 
      * @param id Identifier for item.
      */
-    public answerSuggestedIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2002> {
+    public answerSuggestedIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2001> {
         return this.answerSuggestedIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class Answer_suggestedApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answerSuggestedIdPatch(id: string, item: models.Item8, extraHttpRequestParams?: any): Observable<number> {
+    public answerSuggestedIdPatch(id: string, item: models.Item5, extraHttpRequestParams?: any): Observable<number> {
         return this.answerSuggestedIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class Answer_suggestedApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answerSuggestedIdPut(id: string, item: models.Item7, extraHttpRequestParams?: any): Observable<number> {
+    public answerSuggestedIdPut(id: string, item: models.Item4, extraHttpRequestParams?: any): Observable<number> {
         return this.answerSuggestedIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class Answer_suggestedApi {
      * 
      * @param item Item to create.
      */
-    public answerSuggestedPost(item: models.Item6, extraHttpRequestParams?: any): Observable<number> {
+    public answerSuggestedPost(item: models.Item3, extraHttpRequestParams?: any): Observable<number> {
         return this.answerSuggestedPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class Answer_suggestedApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answerSuggestedIdPatchWithHttpInfo(id: string, item: models.Item8, extraHttpRequestParams?: any): Observable<Response> {
+    public answerSuggestedIdPatchWithHttpInfo(id: string, item: models.Item5, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/answer_suggested/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class Answer_suggestedApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answerSuggestedIdPutWithHttpInfo(id: string, item: models.Item7, extraHttpRequestParams?: any): Observable<Response> {
+    public answerSuggestedIdPutWithHttpInfo(id: string, item: models.Item4, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/answer_suggested/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class Answer_suggestedApi {
      * 
      * @param item Item to create.
      */
-    public answerSuggestedPostWithHttpInfo(item: models.Item6, extraHttpRequestParams?: any): Observable<Response> {
+    public answerSuggestedPostWithHttpInfo(item: models.Item3, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/answer_suggested`;
 
         let queryParameters = new URLSearchParams();

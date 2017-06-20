@@ -79,7 +79,7 @@ export class GroupApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public groupGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20021>> {
+    public groupGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20020>> {
         return this.groupGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class GroupApi {
      * 
      * @param id Identifier for item.
      */
-    public groupIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20021> {
+    public groupIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20020> {
         return this.groupIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class GroupApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public groupIdPatch(id: string, item: models.Item65, extraHttpRequestParams?: any): Observable<number> {
+    public groupIdPatch(id: string, item: models.Item62, extraHttpRequestParams?: any): Observable<number> {
         return this.groupIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class GroupApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public groupIdPut(id: string, item: models.Item64, extraHttpRequestParams?: any): Observable<number> {
+    public groupIdPut(id: string, item: models.Item61, extraHttpRequestParams?: any): Observable<number> {
         return this.groupIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class GroupApi {
      * 
      * @param item Item to create.
      */
-    public groupPost(item: models.Item63, extraHttpRequestParams?: any): Observable<number> {
+    public groupPost(item: models.Item60, extraHttpRequestParams?: any): Observable<number> {
         return this.groupPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class GroupApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public groupIdPatchWithHttpInfo(id: string, item: models.Item65, extraHttpRequestParams?: any): Observable<Response> {
+    public groupIdPatchWithHttpInfo(id: string, item: models.Item62, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/group/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class GroupApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public groupIdPutWithHttpInfo(id: string, item: models.Item64, extraHttpRequestParams?: any): Observable<Response> {
+    public groupIdPutWithHttpInfo(id: string, item: models.Item61, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/group/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class GroupApi {
      * 
      * @param item Item to create.
      */
-    public groupPostWithHttpInfo(item: models.Item63, extraHttpRequestParams?: any): Observable<Response> {
+    public groupPostWithHttpInfo(item: models.Item60, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/group`;
 
         let queryParameters = new URLSearchParams();

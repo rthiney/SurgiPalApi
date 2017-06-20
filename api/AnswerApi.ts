@@ -79,7 +79,7 @@ export class AnswerApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public answerGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2001>> {
+    public answerGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse200>> {
         return this.answerGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class AnswerApi {
      * 
      * @param id Identifier for item.
      */
-    public answerIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2001> {
+    public answerIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse200> {
         return this.answerIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class AnswerApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answerIdPatch(id: string, item: models.Item5, extraHttpRequestParams?: any): Observable<number> {
+    public answerIdPatch(id: string, item: models.Item2, extraHttpRequestParams?: any): Observable<number> {
         return this.answerIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class AnswerApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answerIdPut(id: string, item: models.Item4, extraHttpRequestParams?: any): Observable<number> {
+    public answerIdPut(id: string, item: models.Item1, extraHttpRequestParams?: any): Observable<number> {
         return this.answerIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class AnswerApi {
      * 
      * @param item Item to create.
      */
-    public answerPost(item: models.Item3, extraHttpRequestParams?: any): Observable<number> {
+    public answerPost(item: models.Item, extraHttpRequestParams?: any): Observable<number> {
         return this.answerPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class AnswerApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answerIdPatchWithHttpInfo(id: string, item: models.Item5, extraHttpRequestParams?: any): Observable<Response> {
+    public answerIdPatchWithHttpInfo(id: string, item: models.Item2, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/answer/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class AnswerApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public answerIdPutWithHttpInfo(id: string, item: models.Item4, extraHttpRequestParams?: any): Observable<Response> {
+    public answerIdPutWithHttpInfo(id: string, item: models.Item1, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/answer/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class AnswerApi {
      * 
      * @param item Item to create.
      */
-    public answerPostWithHttpInfo(item: models.Item3, extraHttpRequestParams?: any): Observable<Response> {
+    public answerPostWithHttpInfo(item: models.Item, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/answer`;
 
         let queryParameters = new URLSearchParams();

@@ -29,10 +29,6 @@ export interface Item19 {
 
     name: string;
 
-    categoryId?: number;
-
-    description?: string;
-
-    active: number;
+    parentId?: number;
 
 }

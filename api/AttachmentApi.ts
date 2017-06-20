@@ -79,7 +79,7 @@ export class AttachmentApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public attachmentGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2005>> {
+    public attachmentGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2004>> {
         return this.attachmentGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class AttachmentApi {
      * 
      * @param id Identifier for item.
      */
-    public attachmentIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2005> {
+    public attachmentIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2004> {
         return this.attachmentIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class AttachmentApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public attachmentIdPatch(id: string, item: models.Item17, extraHttpRequestParams?: any): Observable<number> {
+    public attachmentIdPatch(id: string, item: models.Item14, extraHttpRequestParams?: any): Observable<number> {
         return this.attachmentIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class AttachmentApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public attachmentIdPut(id: string, item: models.Item16, extraHttpRequestParams?: any): Observable<number> {
+    public attachmentIdPut(id: string, item: models.Item13, extraHttpRequestParams?: any): Observable<number> {
         return this.attachmentIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class AttachmentApi {
      * 
      * @param item Item to create.
      */
-    public attachmentPost(item: models.Item15, extraHttpRequestParams?: any): Observable<number> {
+    public attachmentPost(item: models.Item12, extraHttpRequestParams?: any): Observable<number> {
         return this.attachmentPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class AttachmentApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public attachmentIdPatchWithHttpInfo(id: string, item: models.Item17, extraHttpRequestParams?: any): Observable<Response> {
+    public attachmentIdPatchWithHttpInfo(id: string, item: models.Item14, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/attachment/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class AttachmentApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public attachmentIdPutWithHttpInfo(id: string, item: models.Item16, extraHttpRequestParams?: any): Observable<Response> {
+    public attachmentIdPutWithHttpInfo(id: string, item: models.Item13, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/attachment/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class AttachmentApi {
      * 
      * @param item Item to create.
      */
-    public attachmentPostWithHttpInfo(item: models.Item15, extraHttpRequestParams?: any): Observable<Response> {
+    public attachmentPostWithHttpInfo(item: models.Item12, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/attachment`;
 
         let queryParameters = new URLSearchParams();

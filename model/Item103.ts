@@ -27,6 +27,10 @@ import * as models from './models';
 export interface Item103 {
     id: number;
 
-    name: string;
+    name?: string;
+
+    slug?: string;
+
+    value?: string;
 
 }

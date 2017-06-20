@@ -25,36 +25,32 @@
 import * as models from './models';
 
 export interface Item71 {
-    id: number;
+    id?: number;
 
-    name?: string;
+    userId?: number;
 
-    managerName?: string;
+    subject: string;
 
-    managerPhone?: string;
+    message: string;
 
-    managerPager?: string;
+    createdAt: string;
 
-    managerEmail?: string;
+    viewed: number;
 
-    address?: string;
+    senderId?: number;
 
-    suite?: string;
+    doctorDataId?: number;
 
-    city?: string;
+    hospitalDataId?: number;
 
-    postalCode?: string;
+    email?: string;
 
-    stateId?: number;
+    doctorName?: string;
 
-    countryId?: number;
+    doctorImage?: string;
 
-    stateTyped?: string;
+    hospitalName?: string;
 
-    userRole?: string;
-
-    phone?: string;
-
-    pager?: string;
+    hospitalEmail?: string;
 
 }

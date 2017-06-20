@@ -27,10 +27,12 @@ import * as models from './models';
 export interface Item15 {
     id: number;
 
-    answerBoxId?: number;
+    name: string;
 
-    name?: string;
+    categoryId?: number;
 
-    file?: string;
+    description?: string;
+
+    active: number;
 
 }

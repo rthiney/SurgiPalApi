@@ -25,8 +25,78 @@
 import * as models from './models';
 
 export interface Item95 {
-    id: number;
+    surgeryId?: number;
 
-    name: string;
+    patient: string;
+
+    term?: string;
+
+    createdAt: string;
+
+    reschedules?: string;
+
+    cancelled?: number;
+
+    completed?: number;
+
+    speciality: string;
+
+    cardId?: number;
+
+    preferenceCardName?: string;
+
+    initials?: string;
+
+    surgeryTime?: string;
+
+    admissionStatus?: string;
+
+    cpt?: string;
+
+    diagnosisCode?: string;
+
+    surgerySnapshot?: number;
+
+    hospitalId?: number;
+
+    hospitalEmail: string;
+
+    hospital?: string;
+
+    doctorFosId?: number;
+
+    doctorEmail: string;
+
+    doctorDataId?: number;
+
+    doctorImage?: string;
+
+    firstName?: string;
+
+    lastName?: string;
+
+    coordinatorName?: string;
+
+    coordinatorPhone?: string;
+
+    coordinatorEmail?: string;
+
+    officePhone?: string;
+
+    pager?: string;
+
+    companyName?: string;
+
+    billingCoordinatorName?: string;
+
+    billingCoordinatorPhone?: string;
+
+    billingCoordinatorEmail?: string;
+
+    managerName?: string;
+
+    managerPhone?: string;
+
+    managerEmail?: string;
 
 }
