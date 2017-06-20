@@ -79,7 +79,7 @@ export class Cluster_cardApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public clusterCardGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2009>> {
+    public clusterCardGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2008>> {
         return this.clusterCardGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class Cluster_cardApi {
      * 
      * @param id Identifier for item.
      */
-    public clusterCardIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2009> {
+    public clusterCardIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2008> {
         return this.clusterCardIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class Cluster_cardApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public clusterCardIdPatch(id: string, item: models.Item29, extraHttpRequestParams?: any): Observable<number> {
+    public clusterCardIdPatch(id: string, item: models.Item26, extraHttpRequestParams?: any): Observable<number> {
         return this.clusterCardIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class Cluster_cardApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public clusterCardIdPut(id: string, item: models.Item28, extraHttpRequestParams?: any): Observable<number> {
+    public clusterCardIdPut(id: string, item: models.Item25, extraHttpRequestParams?: any): Observable<number> {
         return this.clusterCardIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class Cluster_cardApi {
      * 
      * @param item Item to create.
      */
-    public clusterCardPost(item: models.Item27, extraHttpRequestParams?: any): Observable<number> {
+    public clusterCardPost(item: models.Item24, extraHttpRequestParams?: any): Observable<number> {
         return this.clusterCardPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class Cluster_cardApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public clusterCardIdPatchWithHttpInfo(id: string, item: models.Item29, extraHttpRequestParams?: any): Observable<Response> {
+    public clusterCardIdPatchWithHttpInfo(id: string, item: models.Item26, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/cluster_card/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class Cluster_cardApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public clusterCardIdPutWithHttpInfo(id: string, item: models.Item28, extraHttpRequestParams?: any): Observable<Response> {
+    public clusterCardIdPutWithHttpInfo(id: string, item: models.Item25, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/cluster_card/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class Cluster_cardApi {
      * 
      * @param item Item to create.
      */
-    public clusterCardPostWithHttpInfo(item: models.Item27, extraHttpRequestParams?: any): Observable<Response> {
+    public clusterCardPostWithHttpInfo(item: models.Item24, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/cluster_card`;
 
         let queryParameters = new URLSearchParams();

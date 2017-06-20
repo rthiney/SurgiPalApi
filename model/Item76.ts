@@ -25,24 +25,8 @@
 import * as models from './models';
 
 export interface Item76 {
-    id: number;
+    practiceId: number;
 
-    stateId?: number;
-
-    countryId?: number;
-
-    name?: string;
-
-    email?: string;
-
-    address?: string;
-
-    suite?: string;
-
-    city?: string;
-
-    stateTyped?: string;
-
-    postalCode?: string;
+    hospitalId: number;
 
 }

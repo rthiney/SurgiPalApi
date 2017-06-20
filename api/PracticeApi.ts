@@ -79,7 +79,7 @@ export class PracticeApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public practiceGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20025>> {
+    public practiceGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20024>> {
         return this.practiceGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class PracticeApi {
      * 
      * @param id Identifier for item.
      */
-    public practiceIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20025> {
+    public practiceIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20024> {
         return this.practiceIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class PracticeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public practiceIdPatch(id: string, item: models.Item77, extraHttpRequestParams?: any): Observable<number> {
+    public practiceIdPatch(id: string, item: models.Item74, extraHttpRequestParams?: any): Observable<number> {
         return this.practiceIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class PracticeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public practiceIdPut(id: string, item: models.Item76, extraHttpRequestParams?: any): Observable<number> {
+    public practiceIdPut(id: string, item: models.Item73, extraHttpRequestParams?: any): Observable<number> {
         return this.practiceIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class PracticeApi {
      * 
      * @param item Item to create.
      */
-    public practicePost(item: models.Item75, extraHttpRequestParams?: any): Observable<number> {
+    public practicePost(item: models.Item72, extraHttpRequestParams?: any): Observable<number> {
         return this.practicePostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class PracticeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public practiceIdPatchWithHttpInfo(id: string, item: models.Item77, extraHttpRequestParams?: any): Observable<Response> {
+    public practiceIdPatchWithHttpInfo(id: string, item: models.Item74, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/practice/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class PracticeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public practiceIdPutWithHttpInfo(id: string, item: models.Item76, extraHttpRequestParams?: any): Observable<Response> {
+    public practiceIdPutWithHttpInfo(id: string, item: models.Item73, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/practice/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class PracticeApi {
      * 
      * @param item Item to create.
      */
-    public practicePostWithHttpInfo(item: models.Item75, extraHttpRequestParams?: any): Observable<Response> {
+    public practicePostWithHttpInfo(item: models.Item72, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/practice`;
 
         let queryParameters = new URLSearchParams();

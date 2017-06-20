@@ -79,7 +79,7 @@ export class CategoryApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public categoryGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2007>> {
+    public categoryGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2006>> {
         return this.categoryGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class CategoryApi {
      * 
      * @param id Identifier for item.
      */
-    public categoryIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2007> {
+    public categoryIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2006> {
         return this.categoryIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class CategoryApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public categoryIdPatch(id: string, item: models.Item23, extraHttpRequestParams?: any): Observable<number> {
+    public categoryIdPatch(id: string, item: models.Item20, extraHttpRequestParams?: any): Observable<number> {
         return this.categoryIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class CategoryApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public categoryIdPut(id: string, item: models.Item22, extraHttpRequestParams?: any): Observable<number> {
+    public categoryIdPut(id: string, item: models.Item19, extraHttpRequestParams?: any): Observable<number> {
         return this.categoryIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class CategoryApi {
      * 
      * @param item Item to create.
      */
-    public categoryPost(item: models.Item21, extraHttpRequestParams?: any): Observable<number> {
+    public categoryPost(item: models.Item18, extraHttpRequestParams?: any): Observable<number> {
         return this.categoryPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class CategoryApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public categoryIdPatchWithHttpInfo(id: string, item: models.Item23, extraHttpRequestParams?: any): Observable<Response> {
+    public categoryIdPatchWithHttpInfo(id: string, item: models.Item20, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/category/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class CategoryApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public categoryIdPutWithHttpInfo(id: string, item: models.Item22, extraHttpRequestParams?: any): Observable<Response> {
+    public categoryIdPutWithHttpInfo(id: string, item: models.Item19, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/category/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class CategoryApi {
      * 
      * @param item Item to create.
      */
-    public categoryPostWithHttpInfo(item: models.Item21, extraHttpRequestParams?: any): Observable<Response> {
+    public categoryPostWithHttpInfo(item: models.Item18, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/category`;
 
         let queryParameters = new URLSearchParams();

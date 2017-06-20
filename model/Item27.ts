@@ -25,8 +25,14 @@
 import * as models from './models';
 
 export interface Item27 {
-    clusterId: number;
+    id: number;
 
-    cardId: number;
+    name: string;
+
+    email: string;
+
+    message: string;
+
+    createdAt: string;
 
 }

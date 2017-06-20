@@ -25,9 +25,19 @@
 import * as models from './models';
 
 export interface Item98 {
-    surgeryId?: number;
+    id: number;
+
+    doctorId?: number;
+
+    specialtyId?: number;
+
+    answerBoxId?: number;
+
+    surgeryStatusId?: number;
 
     patient: string;
+
+    ssn?: string;
 
     term?: string;
 
@@ -37,66 +47,18 @@ export interface Item98 {
 
     cancelled?: number;
 
+    cpt?: string;
+
     completed?: number;
 
-    speciality: string;
-
-    cardId?: number;
-
-    preferenceCardName?: string;
-
     initials?: string;
+
+    diagnosisCode?: string;
+
+    hospitalId?: number;
 
     surgeryTime?: string;
 
     admissionStatus?: string;
-
-    cpt?: string;
-
-    diagnosisCode?: string;
-
-    surgerySnapshot?: number;
-
-    hospitalId?: number;
-
-    hospitalEmail: string;
-
-    hospital?: string;
-
-    doctorFosId?: number;
-
-    doctorEmail: string;
-
-    doctorDataId?: number;
-
-    doctorImage?: string;
-
-    firstName?: string;
-
-    lastName?: string;
-
-    coordinatorName?: string;
-
-    coordinatorPhone?: string;
-
-    coordinatorEmail?: string;
-
-    officePhone?: string;
-
-    pager?: string;
-
-    companyName?: string;
-
-    billingCoordinatorName?: string;
-
-    billingCoordinatorPhone?: string;
-
-    billingCoordinatorEmail?: string;
-
-    managerName?: string;
-
-    managerPhone?: string;
-
-    managerEmail?: string;
 
 }

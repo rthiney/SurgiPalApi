@@ -128,7 +128,7 @@ export class Years_in_practiceApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public yearsInPracticeIdPatch(id: string, item: models.Item122, extraHttpRequestParams?: any): Observable<number> {
+    public yearsInPracticeIdPatch(id: string, item: models.Item119, extraHttpRequestParams?: any): Observable<number> {
         return this.yearsInPracticeIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class Years_in_practiceApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public yearsInPracticeIdPut(id: string, item: models.Item121, extraHttpRequestParams?: any): Observable<number> {
+    public yearsInPracticeIdPut(id: string, item: models.Item118, extraHttpRequestParams?: any): Observable<number> {
         return this.yearsInPracticeIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class Years_in_practiceApi {
      * 
      * @param item Item to create.
      */
-    public yearsInPracticePost(item: models.Item120, extraHttpRequestParams?: any): Observable<number> {
+    public yearsInPracticePost(item: models.Item117, extraHttpRequestParams?: any): Observable<number> {
         return this.yearsInPracticePostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class Years_in_practiceApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public yearsInPracticeIdPatchWithHttpInfo(id: string, item: models.Item122, extraHttpRequestParams?: any): Observable<Response> {
+    public yearsInPracticeIdPatchWithHttpInfo(id: string, item: models.Item119, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/years_in_practice/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class Years_in_practiceApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public yearsInPracticeIdPutWithHttpInfo(id: string, item: models.Item121, extraHttpRequestParams?: any): Observable<Response> {
+    public yearsInPracticeIdPutWithHttpInfo(id: string, item: models.Item118, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/years_in_practice/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class Years_in_practiceApi {
      * 
      * @param item Item to create.
      */
-    public yearsInPracticePostWithHttpInfo(item: models.Item120, extraHttpRequestParams?: any): Observable<Response> {
+    public yearsInPracticePostWithHttpInfo(item: models.Item117, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/years_in_practice`;
 
         let queryParameters = new URLSearchParams();

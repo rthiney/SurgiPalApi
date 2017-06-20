@@ -79,7 +79,7 @@ export class ClusterApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public clusterGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2008>> {
+    public clusterGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2007>> {
         return this.clusterGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class ClusterApi {
      * 
      * @param id Identifier for item.
      */
-    public clusterIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2008> {
+    public clusterIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2007> {
         return this.clusterIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class ClusterApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public clusterIdPatch(id: string, item: models.Item26, extraHttpRequestParams?: any): Observable<number> {
+    public clusterIdPatch(id: string, item: models.Item23, extraHttpRequestParams?: any): Observable<number> {
         return this.clusterIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class ClusterApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public clusterIdPut(id: string, item: models.Item25, extraHttpRequestParams?: any): Observable<number> {
+    public clusterIdPut(id: string, item: models.Item22, extraHttpRequestParams?: any): Observable<number> {
         return this.clusterIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class ClusterApi {
      * 
      * @param item Item to create.
      */
-    public clusterPost(item: models.Item24, extraHttpRequestParams?: any): Observable<number> {
+    public clusterPost(item: models.Item21, extraHttpRequestParams?: any): Observable<number> {
         return this.clusterPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class ClusterApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public clusterIdPatchWithHttpInfo(id: string, item: models.Item26, extraHttpRequestParams?: any): Observable<Response> {
+    public clusterIdPatchWithHttpInfo(id: string, item: models.Item23, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/cluster/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class ClusterApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public clusterIdPutWithHttpInfo(id: string, item: models.Item25, extraHttpRequestParams?: any): Observable<Response> {
+    public clusterIdPutWithHttpInfo(id: string, item: models.Item22, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/cluster/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class ClusterApi {
      * 
      * @param item Item to create.
      */
-    public clusterPostWithHttpInfo(item: models.Item24, extraHttpRequestParams?: any): Observable<Response> {
+    public clusterPostWithHttpInfo(item: models.Item21, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/cluster`;
 
         let queryParameters = new URLSearchParams();

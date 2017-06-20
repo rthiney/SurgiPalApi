@@ -79,7 +79,7 @@ export class StateApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public stateGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20031>> {
+    public stateGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20030>> {
         return this.stateGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class StateApi {
      * 
      * @param id Identifier for item.
      */
-    public stateIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20031> {
+    public stateIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20030> {
         return this.stateIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class StateApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public stateIdPatch(id: string, item: models.Item95, extraHttpRequestParams?: any): Observable<number> {
+    public stateIdPatch(id: string, item: models.Item92, extraHttpRequestParams?: any): Observable<number> {
         return this.stateIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class StateApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public stateIdPut(id: string, item: models.Item94, extraHttpRequestParams?: any): Observable<number> {
+    public stateIdPut(id: string, item: models.Item91, extraHttpRequestParams?: any): Observable<number> {
         return this.stateIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class StateApi {
      * 
      * @param item Item to create.
      */
-    public statePost(item: models.Item93, extraHttpRequestParams?: any): Observable<number> {
+    public statePost(item: models.Item90, extraHttpRequestParams?: any): Observable<number> {
         return this.statePostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class StateApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public stateIdPatchWithHttpInfo(id: string, item: models.Item95, extraHttpRequestParams?: any): Observable<Response> {
+    public stateIdPatchWithHttpInfo(id: string, item: models.Item92, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/state/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class StateApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public stateIdPutWithHttpInfo(id: string, item: models.Item94, extraHttpRequestParams?: any): Observable<Response> {
+    public stateIdPutWithHttpInfo(id: string, item: models.Item91, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/state/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class StateApi {
      * 
      * @param item Item to create.
      */
-    public statePostWithHttpInfo(item: models.Item93, extraHttpRequestParams?: any): Observable<Response> {
+    public statePostWithHttpInfo(item: models.Item90, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/state`;
 
         let queryParameters = new URLSearchParams();

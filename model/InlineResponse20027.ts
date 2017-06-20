@@ -27,22 +27,10 @@ import * as models from './models';
 export interface InlineResponse20027 {
     id?: number;
 
-    text?: string;
-
-    placeholder?: string;
-
-    clusterId?: number;
-
-    questionTypeId?: number;
-
-    active?: number;
-
-    required?: number;
+    name?: string;
 
     position?: number;
 
-    options?: string;
-
-    indent?: number;
+    slug?: string;
 
 }

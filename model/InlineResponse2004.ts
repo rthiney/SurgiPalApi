@@ -27,10 +27,10 @@ import * as models from './models';
 export interface InlineResponse2004 {
     id?: number;
 
-    title?: string;
+    answerBoxId?: number;
 
-    slug?: string;
+    name?: string;
 
-    content?: string;
+    file?: string;
 
 }

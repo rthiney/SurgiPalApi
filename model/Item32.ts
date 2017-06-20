@@ -29,10 +29,4 @@ export interface Item32 {
 
     name: string;
 
-    email: string;
-
-    message: string;
-
-    createdAt: string;
-
 }

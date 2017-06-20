@@ -27,22 +27,10 @@ import * as models from './models';
 export interface Item81 {
     id: number;
 
-    text?: string;
+    name: string;
 
-    placeholder?: string;
+    position: number;
 
-    clusterId?: number;
-
-    questionTypeId?: number;
-
-    active: number;
-
-    required: number;
-
-    position?: number;
-
-    options?: string;
-
-    indent?: number;
+    slug: string;
 
 }

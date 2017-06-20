@@ -27,48 +27,6 @@ import * as models from './models';
 export interface Item52 {
     id: number;
 
-    doctorDataId?: number;
-
-    hospitalDataId?: number;
-
-    username: string;
-
-    usernameCanonical: string;
-
-    email: string;
-
-    emailCanonical: string;
-
-    enabled: number;
-
-    salt: string;
-
-    password: string;
-
-    lastLogin?: string;
-
-    locked: number;
-
-    expired: number;
-
-    expiresAt?: string;
-
-    confirmationToken?: string;
-
-    passwordRequestedAt?: string;
-
-    roles: string;
-
-    credentialsExpired: number;
-
-    credentialsExpireAt?: string;
-
-    practiceId?: number;
-
-    activationToken?: string;
-
-    vendorDataId?: number;
-
-    staffOfId?: number;
+    name: string;
 
 }

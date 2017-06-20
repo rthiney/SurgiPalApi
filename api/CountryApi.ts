@@ -79,7 +79,7 @@ export class CountryApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public countryGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20011>> {
+    public countryGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20010>> {
         return this.countryGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class CountryApi {
      * 
      * @param id Identifier for item.
      */
-    public countryIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20011> {
+    public countryIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20010> {
         return this.countryIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class CountryApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public countryIdPatch(id: string, item: models.Item35, extraHttpRequestParams?: any): Observable<number> {
+    public countryIdPatch(id: string, item: models.Item32, extraHttpRequestParams?: any): Observable<number> {
         return this.countryIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class CountryApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public countryIdPut(id: string, item: models.Item34, extraHttpRequestParams?: any): Observable<number> {
+    public countryIdPut(id: string, item: models.Item31, extraHttpRequestParams?: any): Observable<number> {
         return this.countryIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class CountryApi {
      * 
      * @param item Item to create.
      */
-    public countryPost(item: models.Item33, extraHttpRequestParams?: any): Observable<number> {
+    public countryPost(item: models.Item30, extraHttpRequestParams?: any): Observable<number> {
         return this.countryPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class CountryApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public countryIdPatchWithHttpInfo(id: string, item: models.Item35, extraHttpRequestParams?: any): Observable<Response> {
+    public countryIdPatchWithHttpInfo(id: string, item: models.Item32, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/country/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class CountryApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public countryIdPutWithHttpInfo(id: string, item: models.Item34, extraHttpRequestParams?: any): Observable<Response> {
+    public countryIdPutWithHttpInfo(id: string, item: models.Item31, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/country/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class CountryApi {
      * 
      * @param item Item to create.
      */
-    public countryPostWithHttpInfo(item: models.Item33, extraHttpRequestParams?: any): Observable<Response> {
+    public countryPostWithHttpInfo(item: models.Item30, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/country`;
 
         let queryParameters = new URLSearchParams();

@@ -79,7 +79,7 @@ export class ArticleApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public articleGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2004>> {
+    public articleGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2003>> {
         return this.articleGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class ArticleApi {
      * 
      * @param id Identifier for item.
      */
-    public articleIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2004> {
+    public articleIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2003> {
         return this.articleIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class ArticleApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public articleIdPatch(id: string, item: models.Item14, extraHttpRequestParams?: any): Observable<number> {
+    public articleIdPatch(id: string, item: models.Item11, extraHttpRequestParams?: any): Observable<number> {
         return this.articleIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class ArticleApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public articleIdPut(id: string, item: models.Item13, extraHttpRequestParams?: any): Observable<number> {
+    public articleIdPut(id: string, item: models.Item10, extraHttpRequestParams?: any): Observable<number> {
         return this.articleIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class ArticleApi {
      * 
      * @param item Item to create.
      */
-    public articlePost(item: models.Item12, extraHttpRequestParams?: any): Observable<number> {
+    public articlePost(item: models.Item9, extraHttpRequestParams?: any): Observable<number> {
         return this.articlePostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class ArticleApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public articleIdPatchWithHttpInfo(id: string, item: models.Item14, extraHttpRequestParams?: any): Observable<Response> {
+    public articleIdPatchWithHttpInfo(id: string, item: models.Item11, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/article/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class ArticleApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public articleIdPutWithHttpInfo(id: string, item: models.Item13, extraHttpRequestParams?: any): Observable<Response> {
+    public articleIdPutWithHttpInfo(id: string, item: models.Item10, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/article/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class ArticleApi {
      * 
      * @param item Item to create.
      */
-    public articlePostWithHttpInfo(item: models.Item12, extraHttpRequestParams?: any): Observable<Response> {
+    public articlePostWithHttpInfo(item: models.Item9, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/article`;
 
         let queryParameters = new URLSearchParams();

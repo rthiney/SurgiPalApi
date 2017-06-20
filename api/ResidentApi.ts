@@ -79,7 +79,7 @@ export class ResidentApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public residentGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20029>> {
+    public residentGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20028>> {
         return this.residentGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class ResidentApi {
      * 
      * @param id Identifier for item.
      */
-    public residentIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20029> {
+    public residentIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20028> {
         return this.residentIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class ResidentApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public residentIdPatch(id: string, item: models.Item89, extraHttpRequestParams?: any): Observable<number> {
+    public residentIdPatch(id: string, item: models.Item86, extraHttpRequestParams?: any): Observable<number> {
         return this.residentIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class ResidentApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public residentIdPut(id: string, item: models.Item88, extraHttpRequestParams?: any): Observable<number> {
+    public residentIdPut(id: string, item: models.Item85, extraHttpRequestParams?: any): Observable<number> {
         return this.residentIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class ResidentApi {
      * 
      * @param item Item to create.
      */
-    public residentPost(item: models.Item87, extraHttpRequestParams?: any): Observable<number> {
+    public residentPost(item: models.Item84, extraHttpRequestParams?: any): Observable<number> {
         return this.residentPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class ResidentApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public residentIdPatchWithHttpInfo(id: string, item: models.Item89, extraHttpRequestParams?: any): Observable<Response> {
+    public residentIdPatchWithHttpInfo(id: string, item: models.Item86, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/resident/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class ResidentApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public residentIdPutWithHttpInfo(id: string, item: models.Item88, extraHttpRequestParams?: any): Observable<Response> {
+    public residentIdPutWithHttpInfo(id: string, item: models.Item85, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/resident/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class ResidentApi {
      * 
      * @param item Item to create.
      */
-    public residentPostWithHttpInfo(item: models.Item87, extraHttpRequestParams?: any): Observable<Response> {
+    public residentPostWithHttpInfo(item: models.Item84, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/resident`;
 
         let queryParameters = new URLSearchParams();

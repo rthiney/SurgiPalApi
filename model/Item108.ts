@@ -25,12 +25,6 @@
 import * as models from './models';
 
 export interface Item108 {
-    id: number;
-
-    type?: string;
-
-    description?: string;
-
-    createdAt: string;
+    userId: number;
 
 }

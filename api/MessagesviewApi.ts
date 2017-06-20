@@ -79,7 +79,7 @@ export class MessagesviewApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public messagesviewGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20024>> {
+    public messagesviewGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20023>> {
         return this.messagesviewGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class MessagesviewApi {
      * 
      * @param id Identifier for item.
      */
-    public messagesviewIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20024> {
+    public messagesviewIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20023> {
         return this.messagesviewIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class MessagesviewApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public messagesviewIdPatch(id: string, item: models.Item74, extraHttpRequestParams?: any): Observable<number> {
+    public messagesviewIdPatch(id: string, item: models.Item71, extraHttpRequestParams?: any): Observable<number> {
         return this.messagesviewIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class MessagesviewApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public messagesviewIdPut(id: string, item: models.Item73, extraHttpRequestParams?: any): Observable<number> {
+    public messagesviewIdPut(id: string, item: models.Item70, extraHttpRequestParams?: any): Observable<number> {
         return this.messagesviewIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class MessagesviewApi {
      * 
      * @param item Item to create.
      */
-    public messagesviewPost(item: models.Item72, extraHttpRequestParams?: any): Observable<number> {
+    public messagesviewPost(item: models.Item69, extraHttpRequestParams?: any): Observable<number> {
         return this.messagesviewPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class MessagesviewApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public messagesviewIdPatchWithHttpInfo(id: string, item: models.Item74, extraHttpRequestParams?: any): Observable<Response> {
+    public messagesviewIdPatchWithHttpInfo(id: string, item: models.Item71, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/messagesview/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class MessagesviewApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public messagesviewIdPutWithHttpInfo(id: string, item: models.Item73, extraHttpRequestParams?: any): Observable<Response> {
+    public messagesviewIdPutWithHttpInfo(id: string, item: models.Item70, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/messagesview/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class MessagesviewApi {
      * 
      * @param item Item to create.
      */
-    public messagesviewPostWithHttpInfo(item: models.Item72, extraHttpRequestParams?: any): Observable<Response> {
+    public messagesviewPostWithHttpInfo(item: models.Item69, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/messagesview`;
 
         let queryParameters = new URLSearchParams();

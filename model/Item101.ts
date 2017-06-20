@@ -27,38 +27,6 @@ import * as models from './models';
 export interface Item101 {
     id: number;
 
-    doctorId?: number;
-
-    specialtyId?: number;
-
-    answerBoxId?: number;
-
-    surgeryStatusId?: number;
-
-    patient: string;
-
-    ssn?: string;
-
-    term?: string;
-
-    createdAt: string;
-
-    reschedules?: string;
-
-    cancelled?: number;
-
-    cpt?: string;
-
-    completed?: number;
-
-    initials?: string;
-
-    diagnosisCode?: string;
-
-    hospitalId?: number;
-
-    surgeryTime?: string;
-
-    admissionStatus?: string;
+    name: string;
 
 }

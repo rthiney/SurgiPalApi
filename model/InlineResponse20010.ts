@@ -29,10 +29,4 @@ export interface InlineResponse20010 {
 
     name?: string;
 
-    email?: string;
-
-    message?: string;
-
-    createdAt?: string;
-
 }

@@ -79,7 +79,7 @@ export class Question_typeApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public questionTypeGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20028>> {
+    public questionTypeGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20027>> {
         return this.questionTypeGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class Question_typeApi {
      * 
      * @param id Identifier for item.
      */
-    public questionTypeIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20028> {
+    public questionTypeIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20027> {
         return this.questionTypeIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class Question_typeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public questionTypeIdPatch(id: string, item: models.Item86, extraHttpRequestParams?: any): Observable<number> {
+    public questionTypeIdPatch(id: string, item: models.Item83, extraHttpRequestParams?: any): Observable<number> {
         return this.questionTypeIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class Question_typeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public questionTypeIdPut(id: string, item: models.Item85, extraHttpRequestParams?: any): Observable<number> {
+    public questionTypeIdPut(id: string, item: models.Item82, extraHttpRequestParams?: any): Observable<number> {
         return this.questionTypeIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class Question_typeApi {
      * 
      * @param item Item to create.
      */
-    public questionTypePost(item: models.Item84, extraHttpRequestParams?: any): Observable<number> {
+    public questionTypePost(item: models.Item81, extraHttpRequestParams?: any): Observable<number> {
         return this.questionTypePostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class Question_typeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public questionTypeIdPatchWithHttpInfo(id: string, item: models.Item86, extraHttpRequestParams?: any): Observable<Response> {
+    public questionTypeIdPatchWithHttpInfo(id: string, item: models.Item83, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/question_type/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class Question_typeApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public questionTypeIdPutWithHttpInfo(id: string, item: models.Item85, extraHttpRequestParams?: any): Observable<Response> {
+    public questionTypeIdPutWithHttpInfo(id: string, item: models.Item82, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/question_type/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class Question_typeApi {
      * 
      * @param item Item to create.
      */
-    public questionTypePostWithHttpInfo(item: models.Item84, extraHttpRequestParams?: any): Observable<Response> {
+    public questionTypePostWithHttpInfo(item: models.Item81, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/question_type`;
 
         let queryParameters = new URLSearchParams();

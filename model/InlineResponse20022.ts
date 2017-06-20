@@ -29,4 +29,32 @@ export interface InlineResponse20022 {
 
     name?: string;
 
+    managerName?: string;
+
+    managerPhone?: string;
+
+    managerPager?: string;
+
+    managerEmail?: string;
+
+    address?: string;
+
+    suite?: string;
+
+    city?: string;
+
+    postalCode?: string;
+
+    stateId?: number;
+
+    countryId?: number;
+
+    stateTyped?: string;
+
+    userRole?: string;
+
+    phone?: string;
+
+    pager?: string;
+
 }

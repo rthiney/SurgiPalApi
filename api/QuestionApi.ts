@@ -79,7 +79,7 @@ export class QuestionApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public questionGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20027>> {
+    public questionGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20026>> {
         return this.questionGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class QuestionApi {
      * 
      * @param id Identifier for item.
      */
-    public questionIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20027> {
+    public questionIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20026> {
         return this.questionIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class QuestionApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public questionIdPatch(id: string, item: models.Item83, extraHttpRequestParams?: any): Observable<number> {
+    public questionIdPatch(id: string, item: models.Item80, extraHttpRequestParams?: any): Observable<number> {
         return this.questionIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class QuestionApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public questionIdPut(id: string, item: models.Item82, extraHttpRequestParams?: any): Observable<number> {
+    public questionIdPut(id: string, item: models.Item79, extraHttpRequestParams?: any): Observable<number> {
         return this.questionIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class QuestionApi {
      * 
      * @param item Item to create.
      */
-    public questionPost(item: models.Item81, extraHttpRequestParams?: any): Observable<number> {
+    public questionPost(item: models.Item78, extraHttpRequestParams?: any): Observable<number> {
         return this.questionPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class QuestionApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public questionIdPatchWithHttpInfo(id: string, item: models.Item83, extraHttpRequestParams?: any): Observable<Response> {
+    public questionIdPatchWithHttpInfo(id: string, item: models.Item80, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/question/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class QuestionApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public questionIdPutWithHttpInfo(id: string, item: models.Item82, extraHttpRequestParams?: any): Observable<Response> {
+    public questionIdPutWithHttpInfo(id: string, item: models.Item79, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/question/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class QuestionApi {
      * 
      * @param item Item to create.
      */
-    public questionPostWithHttpInfo(item: models.Item81, extraHttpRequestParams?: any): Observable<Response> {
+    public questionPostWithHttpInfo(item: models.Item78, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/question`;
 
         let queryParameters = new URLSearchParams();

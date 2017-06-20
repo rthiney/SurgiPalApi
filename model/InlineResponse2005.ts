@@ -27,10 +27,12 @@ import * as models from './models';
 export interface InlineResponse2005 {
     id?: number;
 
-    answerBoxId?: number;
-
     name?: string;
 
-    file?: string;
+    categoryId?: number;
+
+    description?: string;
+
+    active?: number;
 
 }

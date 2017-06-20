@@ -79,7 +79,7 @@ export class ExclusionerApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public exclusionerGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20016>> {
+    public exclusionerGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20015>> {
         return this.exclusionerGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class ExclusionerApi {
      * 
      * @param id Identifier for item.
      */
-    public exclusionerIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20016> {
+    public exclusionerIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20015> {
         return this.exclusionerIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class ExclusionerApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public exclusionerIdPatch(id: string, item: models.Item50, extraHttpRequestParams?: any): Observable<number> {
+    public exclusionerIdPatch(id: string, item: models.Item47, extraHttpRequestParams?: any): Observable<number> {
         return this.exclusionerIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class ExclusionerApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public exclusionerIdPut(id: string, item: models.Item49, extraHttpRequestParams?: any): Observable<number> {
+    public exclusionerIdPut(id: string, item: models.Item46, extraHttpRequestParams?: any): Observable<number> {
         return this.exclusionerIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class ExclusionerApi {
      * 
      * @param item Item to create.
      */
-    public exclusionerPost(item: models.Item48, extraHttpRequestParams?: any): Observable<number> {
+    public exclusionerPost(item: models.Item45, extraHttpRequestParams?: any): Observable<number> {
         return this.exclusionerPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class ExclusionerApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public exclusionerIdPatchWithHttpInfo(id: string, item: models.Item50, extraHttpRequestParams?: any): Observable<Response> {
+    public exclusionerIdPatchWithHttpInfo(id: string, item: models.Item47, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/exclusioner/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class ExclusionerApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public exclusionerIdPutWithHttpInfo(id: string, item: models.Item49, extraHttpRequestParams?: any): Observable<Response> {
+    public exclusionerIdPutWithHttpInfo(id: string, item: models.Item46, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/exclusioner/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class ExclusionerApi {
      * 
      * @param item Item to create.
      */
-    public exclusionerPostWithHttpInfo(item: models.Item48, extraHttpRequestParams?: any): Observable<Response> {
+    public exclusionerPostWithHttpInfo(item: models.Item45, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/exclusioner`;
 
         let queryParameters = new URLSearchParams();

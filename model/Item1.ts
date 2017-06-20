@@ -27,10 +27,16 @@ import * as models from './models';
 export interface Item1 {
     id: number;
 
-    type?: string;
+    fosUserId?: number;
 
-    description?: string;
+    questionId?: number;
+
+    answersBoxId?: number;
+
+    reply?: string;
 
     createdAt: string;
+
+    updatedAt: string;
 
 }

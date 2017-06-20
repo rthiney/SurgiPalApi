@@ -25,26 +25,8 @@
 import * as models from './models';
 
 export interface Item116 {
-    id: number;
+    vendordataId: number;
 
-    stateId?: number;
-
-    companyName?: string;
-
-    name?: string;
-
-    address?: string;
-
-    suite?: string;
-
-    city?: string;
-
-    stateTyped?: string;
-
-    postalCode?: string;
-
-    phone?: string;
-
-    userRole?: string;
+    userId: number;
 
 }

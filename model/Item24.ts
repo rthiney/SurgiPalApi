@@ -25,8 +25,8 @@
 import * as models from './models';
 
 export interface Item24 {
-    id: number;
+    clusterId: number;
 
-    name: string;
+    cardId: number;
 
 }

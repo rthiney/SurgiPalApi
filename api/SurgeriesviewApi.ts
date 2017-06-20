@@ -79,7 +79,7 @@ export class SurgeriesviewApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public surgeriesviewGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20032>> {
+    public surgeriesviewGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse20031>> {
         return this.surgeriesviewGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class SurgeriesviewApi {
      * 
      * @param id Identifier for item.
      */
-    public surgeriesviewIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20032> {
+    public surgeriesviewIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse20031> {
         return this.surgeriesviewIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class SurgeriesviewApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public surgeriesviewIdPatch(id: string, item: models.Item98, extraHttpRequestParams?: any): Observable<number> {
+    public surgeriesviewIdPatch(id: string, item: models.Item95, extraHttpRequestParams?: any): Observable<number> {
         return this.surgeriesviewIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class SurgeriesviewApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public surgeriesviewIdPut(id: string, item: models.Item97, extraHttpRequestParams?: any): Observable<number> {
+    public surgeriesviewIdPut(id: string, item: models.Item94, extraHttpRequestParams?: any): Observable<number> {
         return this.surgeriesviewIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class SurgeriesviewApi {
      * 
      * @param item Item to create.
      */
-    public surgeriesviewPost(item: models.Item96, extraHttpRequestParams?: any): Observable<number> {
+    public surgeriesviewPost(item: models.Item93, extraHttpRequestParams?: any): Observable<number> {
         return this.surgeriesviewPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class SurgeriesviewApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public surgeriesviewIdPatchWithHttpInfo(id: string, item: models.Item98, extraHttpRequestParams?: any): Observable<Response> {
+    public surgeriesviewIdPatchWithHttpInfo(id: string, item: models.Item95, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/surgeriesview/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class SurgeriesviewApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public surgeriesviewIdPutWithHttpInfo(id: string, item: models.Item97, extraHttpRequestParams?: any): Observable<Response> {
+    public surgeriesviewIdPutWithHttpInfo(id: string, item: models.Item94, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/surgeriesview/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class SurgeriesviewApi {
      * 
      * @param item Item to create.
      */
-    public surgeriesviewPostWithHttpInfo(item: models.Item96, extraHttpRequestParams?: any): Observable<Response> {
+    public surgeriesviewPostWithHttpInfo(item: models.Item93, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/surgeriesview`;
 
         let queryParameters = new URLSearchParams();

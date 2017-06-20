@@ -128,7 +128,7 @@ export class Vendordata_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public vendordataUserIdPatch(id: string, item: models.Item119, extraHttpRequestParams?: any): Observable<number> {
+    public vendordataUserIdPatch(id: string, item: models.Item116, extraHttpRequestParams?: any): Observable<number> {
         return this.vendordataUserIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class Vendordata_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public vendordataUserIdPut(id: string, item: models.Item118, extraHttpRequestParams?: any): Observable<number> {
+    public vendordataUserIdPut(id: string, item: models.Item115, extraHttpRequestParams?: any): Observable<number> {
         return this.vendordataUserIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class Vendordata_userApi {
      * 
      * @param item Item to create.
      */
-    public vendordataUserPost(item: models.Item117, extraHttpRequestParams?: any): Observable<number> {
+    public vendordataUserPost(item: models.Item114, extraHttpRequestParams?: any): Observable<number> {
         return this.vendordataUserPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class Vendordata_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public vendordataUserIdPatchWithHttpInfo(id: string, item: models.Item119, extraHttpRequestParams?: any): Observable<Response> {
+    public vendordataUserIdPatchWithHttpInfo(id: string, item: models.Item116, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/vendordata_user/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class Vendordata_userApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public vendordataUserIdPutWithHttpInfo(id: string, item: models.Item118, extraHttpRequestParams?: any): Observable<Response> {
+    public vendordataUserIdPutWithHttpInfo(id: string, item: models.Item115, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/vendordata_user/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class Vendordata_userApi {
      * 
      * @param item Item to create.
      */
-    public vendordataUserPostWithHttpInfo(item: models.Item117, extraHttpRequestParams?: any): Observable<Response> {
+    public vendordataUserPostWithHttpInfo(item: models.Item114, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/vendordata_user`;
 
         let queryParameters = new URLSearchParams();

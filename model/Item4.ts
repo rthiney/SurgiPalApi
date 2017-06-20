@@ -29,6 +29,8 @@ export interface Item4 {
 
     fosUserId?: number;
 
+    suggestingHospitalId?: number;
+
     questionId?: number;
 
     answersBoxId?: number;
@@ -36,7 +38,5 @@ export interface Item4 {
     reply?: string;
 
     createdAt: string;
-
-    updatedAt: string;
 
 }

@@ -79,7 +79,7 @@ export class CardApi {
      * @param filter[] Filters to be applied. Each filter consists of a column, an operator and a value (comma separated). Example: id,eq,1
      * @param satisfy Should all filters match (default)? Or any?
      */
-    public cardGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2006>> {
+    public cardGet(exclude?: string, include?: string, order?: string, page?: string, transform?: boolean, columns?: string, filter[]?: Array<string>, satisfy?: string, extraHttpRequestParams?: any): Observable<Array<models.InlineResponse2005>> {
         return this.cardGetWithHttpInfo(exclude, include, order, page, transform, columns, filter[], satisfy, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -111,7 +111,7 @@ export class CardApi {
      * 
      * @param id Identifier for item.
      */
-    public cardIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2006> {
+    public cardIdGet(id: string, extraHttpRequestParams?: any): Observable<models.InlineResponse2005> {
         return this.cardIdGetWithHttpInfo(id, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -128,7 +128,7 @@ export class CardApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public cardIdPatch(id: string, item: models.Item20, extraHttpRequestParams?: any): Observable<number> {
+    public cardIdPatch(id: string, item: models.Item17, extraHttpRequestParams?: any): Observable<number> {
         return this.cardIdPatchWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -145,7 +145,7 @@ export class CardApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public cardIdPut(id: string, item: models.Item19, extraHttpRequestParams?: any): Observable<number> {
+    public cardIdPut(id: string, item: models.Item16, extraHttpRequestParams?: any): Observable<number> {
         return this.cardIdPutWithHttpInfo(id, item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -161,7 +161,7 @@ export class CardApi {
      * 
      * @param item Item to create.
      */
-    public cardPost(item: models.Item18, extraHttpRequestParams?: any): Observable<number> {
+    public cardPost(item: models.Item15, extraHttpRequestParams?: any): Observable<number> {
         return this.cardPostWithHttpInfo(item, extraHttpRequestParams)
             .map((response: Response) => {
                 if (response.status === 204) {
@@ -338,7 +338,7 @@ export class CardApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public cardIdPatchWithHttpInfo(id: string, item: models.Item20, extraHttpRequestParams?: any): Observable<Response> {
+    public cardIdPatchWithHttpInfo(id: string, item: models.Item17, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/card/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -389,7 +389,7 @@ export class CardApi {
      * @param id Identifier for item.
      * @param item Properties of item to update.
      */
-    public cardIdPutWithHttpInfo(id: string, item: models.Item19, extraHttpRequestParams?: any): Observable<Response> {
+    public cardIdPutWithHttpInfo(id: string, item: models.Item16, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/card/${id}`;
 
         let queryParameters = new URLSearchParams();
@@ -439,7 +439,7 @@ export class CardApi {
      * 
      * @param item Item to create.
      */
-    public cardPostWithHttpInfo(item: models.Item18, extraHttpRequestParams?: any): Observable<Response> {
+    public cardPostWithHttpInfo(item: models.Item15, extraHttpRequestParams?: any): Observable<Response> {
         const path = this.basePath + `/card`;
 
         let queryParameters = new URLSearchParams();

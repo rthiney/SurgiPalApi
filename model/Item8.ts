@@ -27,16 +27,28 @@ import * as models from './models';
 export interface Item8 {
     id: number;
 
-    fosUserId?: number;
+    cardId?: number;
 
-    suggestingHospitalId?: number;
+    doctorId?: number;
 
-    questionId?: number;
+    respondentId?: number;
 
-    answersBoxId?: number;
-
-    reply?: string;
+    name?: string;
 
     createdAt: string;
+
+    hospitalId?: number;
+
+    parentSnapshotId?: number;
+
+    surgerySnapshot?: number;
+
+    cpt?: string;
+
+    diagnosisCode?: string;
+
+    surgeryTime?: string;
+
+    admissionStatus?: string;
 
 }
